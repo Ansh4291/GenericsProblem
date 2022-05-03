@@ -1,6 +1,13 @@
 package com.bridgelabz;
 
-public class FindMaxValueByGenerics {
+public class FindMaxValueByGenerics <E extends Comparable<E>> {
+    E a1 , a2, a3;
+    public FindMaxValueByGenerics (E a1, E a2, E a3){
+        this.a1 = a1;
+        this.a2 = a2;
+        this.a3 = a3;
+    }
+
     /*
       Generic method to compare any type of data and find maximum
      a1 : First value to compare
